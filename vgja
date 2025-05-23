@@ -1,20 +1,35 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"/><title>Service Guide</title><base href="/"/><script>if (document.domain == "dsg.boar.work") {
-        var debugmodeflag = 0;
-        var baseurl = "https://dsg.boar.work/";
-        var login_site = "https://login.boar.work/?webloginmode=lo";
-      } else if (document.domain == "dsg.vgjas.com") {
-        var debugmodeflag = 0;
-        var baseurl = "https://dsg.vgjas.com/";
-        var login_site = "https://login.vgjas.com/?webloginmode=lo";
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Service Guide</title>
+    <base href="/" />
+    <script>
+      let debugmodeflag;
+      let baseurl;
+      let login_site;
+
+      if (document.domain === "dsg.boar.work") {
+        debugmodeflag = 0;
+        baseurl = "https://dsg.boar.work/";
+        login_site = "https://login.boar.work/?webloginmode=lo";
+      } else if (document.domain === "dsg.vgjas.com") {
+        debugmodeflag = 0;
+        baseurl = "https://dsg.vgjas.com/";
+        login_site = "https://login.vgjas.com/?webloginmode=lo";
       } else {
-        var debugmodeflag = 1;
-        var baseurl = "https://dsg.boar.work/";
-        var login_site = "https://login.boar.work/?webloginmode=lo";
-      }</script><!-- Google Tag Manager --><script>(function(w, d, s, l, i) {
+        debugmodeflag = 1;
+        baseurl = "https://dsg.boar.work/";
+        login_site = "https://login.boar.work/?webloginmode=lo";
+      }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
           "gtm.start": new Date().getTime(),
-          event: "gtm.js"
+          event: "gtm.js",
         });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
@@ -22,14 +37,76 @@
         j.async = true;
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-M2ZPP58");</script><!-- End Google Tag Manager --><script>function pushGTMlookScreen(screenurl) {
+      })(window, document, "script", "dataLayer", "GTM-M2ZPP58");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+      function pushGTMlookScreen(screenurl) {
         dataLayer = dataLayer || [];
         dataLayer.push({
           trackPageview: screenurl,
           title: "第三階層",
-          event: "loadready"
+          event: "loadready",
         });
-      }</script><script src="assets/js/jquery-3.2.1.min.js"></script><script src="assets/js/jquery-ui.js"></script><script src="assets/js/jquery.fittext.js"></script><script src="assets/js/jquery.rwdImageMaps.js"></script><script src="assets/js/jquery.magnific-popup.js"></script><!-- Hammer JS --><!--<script src="assets/js/hammer.js"></script>--><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><link rel="icon" type="image/x-icon" href="favicon.ico"/><link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"/><link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"/><link href="assets/css/magnific-popup.css" rel="stylesheet"/><link href="assets/css/swiper.css" rel="stylesheet"/><link href="styles.a467d0bb82469a673ad1.bundle.css" rel="stylesheet"/></head><body><app-root></app-root><script type="text/javascript" src="inline.8c6f146e0d59417b787c.bundle.js"></script><script type="text/javascript" src="polyfills.900aaf0d520c2ec873a7.bundle.js"></script><script type="text/javascript" src="scripts.f4e68bf40bdd7a50f1d1.bundle.js"></script><script type="text/javascript" src="vendor.56dac31a417a4d715b2b.bundle.js"></script><script type="text/javascript" src="main.3c05bf1d97c9a46fd9dd.bundle.js"></script></body><script src="assets/js/jquery-3.2.1.min.js"></script><script src="assets/js/jquery-ui.js"></script><script src="assets/js/jquery.fittext.js"></script><script src="assets/js/jquery.rwdImageMaps.js"></script><script src="assets/js/jquery.magnific-popup.js"></script><script src="assets/js/jquery.cookie.min.js"></script><script src="assets/js/spritespin.js"></script><script src="assets/js/pinch-zoom.js"></script><script src="assets/js/swiper.js"></script><script>// 第三階層登場時アニメ
+      }
+    </script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script src="assets/js/jquery.rwdImageMaps.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <!-- Hammer JS -->
+    <!--<script src="assets/js/hammer.js"></script>-->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/swiper.css" rel="stylesheet" />
+    <link href="styles.a467d0bb82469a673ad1.bundle.css" rel="stylesheet" />
+  </head>
+  <body>
+    <app-root></app-root>
+    <script type="text/javascript" src="inline.8c6f146e0d59417b787c.bundle.js"></script>
+    <script
+      type="text/javascript"
+      src="polyfills.900aaf0d520c2ec873a7.bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="scripts.f4e68bf40bdd7a50f1d1.bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="vendor.56dac31a417a4d715b2b.bundle.js"
+    ></script>
+    <script type="text/javascript" src="main.3c05bf1d97c9a46fd9dd.bundle.js"></script>
+  </body>
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/jquery.fittext.js"></script>
+  <script src="assets/js/jquery.rwdImageMaps.js"></script>
+  <script src="assets/js/jquery.magnific-popup.js"></script>
+  <script src="assets/js/jquery.cookie.min.js"></script>
+  <script src="assets/js/spritespin.js"></script>
+  <script src="assets/js/pinch-zoom.js"></script>
+  <script src="assets/js/swiper.js"></script>
+  <script>
+    // 第三階層登場時アニメ
     function go3rdScreen(url) {
       $("#layer2rd").hide();
       $("#layer3rd").show("slide");
@@ -253,7 +330,10 @@
 
     function go2ndScreenReset() {
       window.location.reload();
-    }</script><script>// 2. This code loads the IFrame Player API code asynchronously.
+    }
+  </script>
+  <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement("script");
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -294,12 +374,12 @@
           cc_load_policy: false,
           // wmode: 'transparent', //z-indexを有効にする
           loop: true,
-          playlist: movie
+          playlist: movie,
         },
         events: {
           // 'onReady': onPlayerReady,
-          onStateChange: onPlayerStateChange
-        }
+          onStateChange: onPlayerStateChange,
+        },
       });
       // // z-indexには気をつけろ。
       // $('iframe').css('z-index',-999);
@@ -336,45 +416,57 @@
       if (nowstate == 0) {
         player[ytPlaying].playVideo();
       }
-    }</script><script>checkurl = baseurl+'explaindata/logincheck.html';
-  // URLを取得
-  var nowurl = new URL(window.location.href);
-
-  // URLSearchParamsオブジェクトを取得
-  var addparams = '';
-  var getparams = nowurl.searchParams;
-  if (getparams.get('logined_code') !== undefined && getparams.get('logined_code') !== '' && getparams.get('logined_code') !== null) {
-    addparams = '?logined_code=' + getparams.get('logined_code');
-    var date = new Date();
-    date.setTime( date.getTime() + ( 60*60*24 * 1000 ));
-    $.cookie('logined_code', getparams.get('logined_code'), { expires: date , path:'/' });
-  } else {
-    var logined_code = $.cookie('logined_code');
-    if (logined_code !== undefined && logined_code !== ''){
-      addparams = '?logined_code=' + logined_code;
     }
-  }
-  checkurl = checkurl + addparams;
+  </script>
+  <script>
+    checkurl = baseurl + "explaindata/logincheck.html";
+    // URLを取得
+    var nowurl = new URL(window.location.href);
 
-  //JSONファイル読み込み開始
-  $.ajax({
-    url:checkurl,
-    cache:false,
-    dataType:"json",
-    success:function(json){
-      console.log(json);
-      result = json.Result;
-      if (result === 'NG') {
-        console.log('NG');
-        // $.cookie('logined_code', '');
-        if (debugmodeflag !== 1) location.href = login_site;
+    // URLSearchParamsオブジェクトを取得
+    var addparams = "";
+    var getparams = nowurl.searchParams;
+    if (
+      getparams.get("logined_code") !== undefined &&
+      getparams.get("logined_code") !== "" &&
+      getparams.get("logined_code") !== null
+    ) {
+      addparams = "?logined_code=" + getparams.get("logined_code");
+      var date = new Date();
+      date.setTime(date.getTime() + 60 * 60 * 24 * 1000);
+      $.cookie("logined_code", getparams.get("logined_code"), {
+        expires: date,
+        path: "/",
+      });
+    } else {
+      var logined_code = $.cookie("logined_code");
+      if (logined_code !== undefined && logined_code !== "") {
+        addparams = "?logined_code=" + logined_code;
       }
-    },
-    error : function (XMLHttpRequest, textStatus, errorThrown) {
-      console.log(XMLHttpRequest); // XMLHttpRequestオブジェクト
-      console.log(XMLHttpRequest.responseText); // XMLHttpRequestオブジェクト
-      console.log(textStatus); // status は、リクエスト結果を表す文字列
-      console.log(errorThrown); // errorThrown は、例外オブジェクト
-      location.href = login_site;
     }
-  });</script></html>
+    checkurl = checkurl + addparams;
+
+    //JSONファイル読み込み開始
+    $.ajax({
+      url: checkurl,
+      cache: false,
+      dataType: "json",
+      success: function (json) {
+        console.log(json);
+        result = json.Result;
+        if (result === "NG") {
+          console.log("NG");
+          // $.cookie('logined_code', '');
+          if (debugmodeflag !== 1) location.href = login_site;
+        }
+      },
+      error: function (XMLHttpRequest, textStatus, errorThrown) {
+        console.log(XMLHttpRequest); // XMLHttpRequestオブジェクト
+        console.log(XMLHttpRequest.responseText); // XMLHttpRequestオブジェクト
+        console.log(textStatus); // status は、リクエスト結果を表す文字列
+        console.log(errorThrown); // errorThrown は、例外オブジェクト
+        location.href = login_site;
+      },
+    });
+  </script>
+</html>
